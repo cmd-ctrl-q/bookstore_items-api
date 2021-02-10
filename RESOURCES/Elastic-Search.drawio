@@ -1,0 +1,97 @@
+<mxfile host="65bd71144e" modified="2021-02-08T01:05:54.332Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.53.0 Chrome/87.0.4280.141 Electron/11.2.1 Safari/537.36" etag="yIbAu4JiiNrqdv_BzWPc" version="13.10.0" type="embed">
+    <diagram id="MA-OcuMsRhqmFblJZ1gv" name="Page-1">
+        <mxGraphModel dx="1437" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="90" width="160" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="EC2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+                    <mxGeometry x="110" y="70" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="shard 1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="shard 3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="290" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="information is stored in shards.&amp;nbsp;&lt;br&gt;&lt;br&gt;You can use elastic search as your primary&lt;br&gt;database engine if you have more than one&amp;nbsp;&lt;br&gt;instance.&amp;nbsp;&lt;br&gt;&lt;br&gt;If you lose a shard that isn't&lt;br&gt;replicated then you'll lose that data.&amp;nbsp;&lt;br&gt;&lt;br&gt;Do not put ES in same docker container that&lt;br&gt;holds the application.&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;br&gt;Data is stored in shards" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+                    <mxGeometry x="-210" y="80" width="250" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="90" width="160" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="EC2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="70" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="shard 1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="340" y="130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="shard 2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="340" y="210" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="shard 2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="210" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="530" y="530" width="220" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="ES" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+                    <mxGeometry x="720" y="600" width="60" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" parent="1" source="14" target="12" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Clients" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="610" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" parent="1" source="16" target="17" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Clients" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="610" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" parent="1" source="17" target="14" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Clients" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="210" y="610" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" parent="1" source="18" target="16" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="HTTP&lt;br&gt;Framework&lt;br&gt;(gorilla/mux)&lt;br&gt;(gin/gonic)&lt;br&gt;etc" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-80" y="550" width="100" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="It is easy to change the http framework because&lt;br&gt;it will not change the source code in any of the&lt;br&gt;other layers.&amp;nbsp;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+                    <mxGeometry x="-265" y="755" width="270" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="PRIMARY SHARDS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+                    <mxGeometry x="100" y="410" width="120" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="REPLICA SHARDS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+                    <mxGeometry x="330" y="410" width="120" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="Pointless to put replicas in the same instance. because if you lose the instance&lt;br&gt;then you lose the primary shards and the replica shards. replicas should be on&lt;br&gt;another instance to act as a backup.&amp;nbsp;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="455" width="430" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="27" target="29">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="27" target="28">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="ELB&lt;br&gt;(elastic load balancer)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="570" y="100" width="121" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="EC2" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="720" y="260" width="121" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="EC2" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="570" y="260" width="121" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
